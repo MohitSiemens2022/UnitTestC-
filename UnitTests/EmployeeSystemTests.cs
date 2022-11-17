@@ -29,7 +29,7 @@ namespace NUnitTest.UnitTests
             Assert.IsInstanceOf<Employee>(Mohit);
             //Assert.That(Mohit, Is.TypeOf(typeof(Person)));
             Assert.That(Mohit, Is.InstanceOf<Employee>()); //Understands inheritance heirarchy
-            //Assert.That(Mohit, Is.InstanceOf<Person>());
+            Assert.That(Mohit, Is.InstanceOf<Person>());
         }
 
         [Test]
