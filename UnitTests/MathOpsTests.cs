@@ -34,6 +34,21 @@ namespace NUnitTest.UnitTests
 
         }
 
+        [Test]
+        public void Test_Addition_2_Decimal_Numbers_Negative_Case()
+        {
+            //Arrange
+            decimal n1 = 100.2m;
+            decimal n2 = -200.3m;
+            decimal expected = 300.5m;
+            //Act
+            decimal actual = mathOperations.Add(n1, n2);
+            //Assert
+            Assert.AreNotEqual(expected, actual);
+            Assert.Less(n2, 0);
+
+        }
+
 
 
     }
