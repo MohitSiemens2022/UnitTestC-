@@ -52,7 +52,7 @@ namespace NUnitTest.UnitTests
         [TestCase(100.2, 200.3, -100.1)]
         [TestCase(100.2, 10.255, 89.945)]
         [TestCase(-12.2, 0, -12.2)]
-        [TestCase(25.5, -55.5, 80)]
+        [TestCase(25.5, -55.5, 81)]
         public void Test_Substraction_2_Decimal_Numbers_Positive_Case(decimal n1,decimal n2,decimal expected)
         {
             //Arrange
