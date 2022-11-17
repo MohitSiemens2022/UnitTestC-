@@ -41,7 +41,7 @@ namespace NUnitTest.UnitTests
             Assert.IsInstanceOf<INda>(Mohit);
             //Assert.That(Mohit, Is.TypeOf(typeof(INda)));
             Assert.That(Mohit, Is.InstanceOf<Employee>()); //Understands inheritance heirarchy
-            //.That(Mohit, Is.InstanceOf<Person>());
+            Assert.That(Mohit, Is.InstanceOf<INda>());
         }
     }
 }
