@@ -12,5 +12,10 @@ namespace NUnitTest.Source
         {
             return a + b;
         }
+
+        public decimal Substarct(decimal a,decimal b) 
+        { 
+            return a - b; 
+        }
     }
 }

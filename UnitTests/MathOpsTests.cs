@@ -49,6 +49,37 @@ namespace NUnitTest.UnitTests
 
         }
 
+        [Test]
+        public void Test_Substraction_2_Decimal_Numbers_Positive_Case()
+        {
+            //Arrange
+            decimal n1 = 200.3m;
+            decimal n2 = 100.2m;
+            decimal expected = 100.1m;
+            //Act
+            decimal actual = mathOperations.Substarct(n1, n2);
+            //Assert
+            Assert.AreEqual(expected, actual);
+            Assert.Greater(n1, 0);
+            Assert.Greater(n2, 0);
+
+        }
+
+        [Test]
+        public void Test_Substraction_2_Decimal_Numbers_Negative_Case()
+        {
+            //Arrange
+            decimal n1 = 200.3m;
+            decimal n2 = -100.2m;
+            decimal expected = 100.1m;
+            //Act
+            decimal actual = mathOperations.Substarct(n1, n2);
+            //Assert
+            Assert.AreNotEqual(expected, actual);
+            Assert.Less(n2, 0);
+
+        }
+
 
 
     }
