@@ -973,6 +973,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "EmployeeSystem/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/EmployeeSystem.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EmployeeSystem.dll": {}
+        }
       }
     }
   },
@@ -3945,10 +3955,16 @@
         "system.xml.xdocument.4.0.11.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "EmployeeSystem/1.0.0": {
+      "type": "project",
+      "path": "../EmployeeSystem/EmployeeSystem.csproj",
+      "msbuildProject": "../EmployeeSystem/EmployeeSystem.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "EmployeeSystem >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.3.2",
       "NUnit >= 3.13.3",
       "NUnit.Analyzers >= 3.3.0",
@@ -3982,7 +3998,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Z004M7NE\\Desktop\\SpringAssignment\\Testing\\EmployeeSystem\\EmployeeSystem.csproj": {
+              "projectPath": "C:\\Users\\Z004M7NE\\Desktop\\SpringAssignment\\Testing\\EmployeeSystem\\EmployeeSystem.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

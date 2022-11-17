@@ -97,3 +97,6 @@ C:\Users\Z004M7NE\Desktop\SpringAssignment\Testing\NUnitTest\obj\Debug\net6.0\re
 C:\Users\Z004M7NE\Desktop\SpringAssignment\Testing\NUnitTest\obj\Debug\net6.0\NUnitTest.pdb
 C:\Users\Z004M7NE\Desktop\SpringAssignment\Testing\NUnitTest\obj\Debug\net6.0\NUnitTest.genruntimeconfig.cache
 C:\Users\Z004M7NE\Desktop\SpringAssignment\Testing\NUnitTest\obj\Debug\net6.0\ref\NUnitTest.dll
+C:\Users\Z004M7NE\Desktop\SpringAssignment\Testing\NUnitTest\bin\Debug\net6.0\CoverletSourceRootsMapping
+C:\Users\Z004M7NE\Desktop\SpringAssignment\Testing\NUnitTest\bin\Debug\net6.0\EmployeeSystem.dll
+C:\Users\Z004M7NE\Desktop\SpringAssignment\Testing\NUnitTest\bin\Debug\net6.0\EmployeeSystem.pdb
