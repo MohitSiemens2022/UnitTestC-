@@ -1,0 +1,64 @@
+﻿SCENARIO: Test Math operations between two decimal numbers
+CASE: Addition of 2 decimal numbers
+GIVEN: n1, n2 (see examples)
+WHEN: Add() is invoked
+THEN: Should return the sum of n1, n2
+ 
+Examples:
+ 
+Input        |    Expected
+-------------------------
+n1 = 100.2
+n2 = 200.3    |    300.5
+
+-----------------------------------------------------------------------
+CASE: Addition of 2 decimal numbers
+GIVEN: n1, n2 (see examples)
+WHEN: Add() is invoked
+THEN: Should NOT return the sum of n1, n2
+ 
+Examples:
+ 
+Input        |    Expected
+-------------------------
+n1 = 100.2
+n2 = -200.3    |    300.5
+
+SCENARIO: Test Math operations between two decimal numbers
+CASE: Substaction of 2 decimal numbers
+GIVEN: n1, n2 (see examples)
+WHEN: Sub() is invoked
+THEN: Should return the difference of n1, n2
+ 
+Examples:
+ 
+Input        |    Expected
+-------------------------
+n1 = 200.3
+n2 = 100.2    |    100.1
+
+SCENARIO: Test Math operations between two decimal numbers
+CASE: Multiplication of 2 Integer numbers
+GIVEN: n1, n2 (see examples)
+WHEN: Mul() is invoked
+THEN: Should return the product of n1, n2
+ 
+Examples:
+ 
+Input        |    Expected
+-------------------------
+n1 = 5
+n2 = 3    |    15
+
+SCENARIO: Test Math operations between two decimal numbers
+CASE: Division of 2 decimal numbers
+GIVEN: n1, n2 (see examples)
+WHEN: Div() is invoked
+THEN: Should return the quotient of n1, n2
+ 
+Examples:
+ 
+Input        |    Expected
+-------------------------
+n1 = 20
+n2 = 5    |    4
