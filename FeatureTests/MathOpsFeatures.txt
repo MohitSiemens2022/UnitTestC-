@@ -11,6 +11,15 @@ Input        |    Expected
 n1 = 100.2
 n2 = 200.3    |    300.5
 
+n1 = 100.2
+n2 = 10.255    |    110.455
+
+n1 = -12.2
+n2 = 0    |    -12.2
+
+n1 = 25.5
+n2 = -55.5    |    -30
+
 -----------------------------------------------------------------------
 CASE: Addition of 2 decimal numbers
 GIVEN: n1, n2 (see examples)
@@ -22,7 +31,7 @@ Examples:
 Input        |    Expected
 -------------------------
 n1 = 100.2
-n2 = -200.3    |    300.5
+n2 = 200.3    |    300.5
 
 SCENARIO: Test Math operations between two decimal numbers
 CASE: Substaction of 2 decimal numbers
@@ -34,8 +43,17 @@ Examples:
  
 Input        |    Expected
 -------------------------
-n1 = 200.3
-n2 = 100.2    |    100.1
+n1 = 100.2
+n2 = 200.3    |    -100.1
+
+n1 = 100.2
+n2 = 10.255    |    89.945
+
+n1 = -12.2
+n2 = 0    |    -12.2
+
+n1 = 25.5
+n2 = -55.5    |    80
 
 SCENARIO: Test Math operations between two decimal numbers
 CASE: Multiplication of 2 Integer numbers
