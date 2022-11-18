@@ -81,7 +81,31 @@ namespace NUnitTest.UnitTests
 
         }
 
+        [TestCase(100.2, 200.3, ExpectedResult = 300.5)]
+        [TestCase(100.2, 10.255, ExpectedResult = 110.455)]
+        [TestCase(-12.2, 0, ExpectedResult = -12.2)]
+        [TestCase(25.5, -55.5, ExpectedResult = -30)]
+        public decimal Test_Addition_using_2_Decimal_Numbers(decimal n1, decimal n2)
+        {
+            return mathOperations.Add(n1, n2);
+        }
 
+        [TestCaseSource(typeof(TestInputs), "AddInputs")]
+        public void Test_Add_Using_DataSource(decimal x, decimal y, decimal expected)
+        {
+            Assert.AreEqual(expected, mathOperations.Add(x, y));
+        }
+    }
 
+    internal class TestInputs
+    {
+        public static object[] AddInputs =
+        {
+            new object[] {2m,4m,6m},
+            new object[] {3m,3m,6m},
+            new object[] {4m,4m,8m},
+            new object[] {5m,5m,10m},
+
+        };
     }
 }
