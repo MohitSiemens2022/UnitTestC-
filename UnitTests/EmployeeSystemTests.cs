@@ -43,5 +43,24 @@ namespace NUnitTest.UnitTests
             Assert.That(Mohit, Is.InstanceOf<Employee>()); //Understands inheritance heirarchy
             Assert.That(Mohit, Is.InstanceOf<INda>());
         }
+
+        [Test]
+        public void Test_Add_Person_With_Valid_Inputs()
+        {
+            //Arrange
+            string name = "Meeena";
+            int age = 25;
+            string gender = "Female";
+            string email = "meena@gmail.com";
+            string address = "Pune";
+
+            //Act
+            Person.Add(new Person() { Name = name, Age = age, Email = email, Gender = gender, Address = address });
+
+            //Assert
+            Assert.That(Person.People.Count, Is.EqualTo(1));
+            Assert.That(Person.People, Has.Some.Property("Name").Contains(name));
+
+        }
     }
 }

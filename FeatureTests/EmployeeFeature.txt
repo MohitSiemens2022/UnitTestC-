@@ -1,0 +1,30 @@
+﻿SCENARIO: Test Operations of Person Class
+
+CASE: Test Add Person with valid inputs
+
+GIVEN: A Person object data
+
+WHEN: Add() is invoked
+
+THEN: Person gets added to a List. Verify the List for addition of person Examples: Inputs                    |    Expected
+
+---------------------------------------------
+
+name='Meena'
+
+Age=25
+
+Gender=Female
+
+Email='meena@gmail.com'
+
+Address='Pune'            | Should be added to people list name='Ramesh'
+
+Age=35
+
+Gender=Male
+
+Email='ramesh@gmail.com'
+
+Address='Ahmedabad'        | Should be added to people list
+
