@@ -62,5 +62,20 @@ namespace NUnitTest.UnitTests
             Assert.That(Person.People, Has.Some.Property("Name").Contains(name));
 
         }
+
+
+        [TestCaseSource(typeof(EmpSystemInputs),"ValidPersons")]
+        public void TestCaseSource_Add_Person_With_Valid_Inputs(string name,
+            int age,string email,string gender,string address)
+        {
+         
+            //Act
+            Person.Add(new Person() { Name = name, Age = age, Email = email, Gender = gender, Address = address });
+
+            //Assert
+            Assert.That(Person.People.Count, Is.GreaterThan(0));
+            Assert.That(Person.People, Has.Some.Property("Name").Contains(name));
+
+        }
     }
 }
